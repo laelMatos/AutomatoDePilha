@@ -1,8 +1,8 @@
 from pilha import Pilha
 
-lista = input("Escreva uma palavra ou frase: ")
+frase = input("Escreva uma palavra ou frase: ")
 
-palavras = lista.split()
+palavras = frase.split()
 palindormo = 0
 
 def isPalindromo(wr):
@@ -32,7 +32,7 @@ saida=""
 for w in palavras:
     p = isPalindromo(w)
     if p:
-        quant =+ 1
+        quant += 1
         saida = saida + str("["+w+"] ")
     else:saida = saida + w + " "
 
